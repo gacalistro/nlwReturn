@@ -1,9 +1,9 @@
 <div align="center">
-<img src="https://i.imgur.com/Gb2sAYB.png"/>
+<img alt="Logo de DoctorCare" src="https://i.imgur.com/XU8qRls.png"/>
 </div>
 
 <p align="center">
-  <img style="border-radius:10px;object-fit:scale-down" alt="DoctorCare" src="https://i.imgur.com/CUqVada.png" width="90%">
+  <img alt="Exemplo da página DoctorCare" src="https://i.imgur.com/CUqVada.png" width="90%">
 </p>
 
 ## <img src="https://cdn-icons-png.flaticon.com/512/922/922656.png" height="30px" width="30px"/> Technologies
@@ -11,9 +11,9 @@
 The project has been developed with these technologies:
 
 <div style="margin-top:-15px;">
-  <img style="border-radius:18px" src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" /> &nbsp;
-  <img style="border-radius:18px" src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" /> &nbsp;
-  <img style="border-radius:18px" src="https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E" />
+  <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" /> &nbsp;
+  <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" /> &nbsp;
+  <img src="https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E" />
 </div>
 
 ## <img src="https://cdn-icons-png.flaticon.com/512/922/922647.png" height="30px" width="30px"/> Project
@@ -28,8 +28,8 @@ Avaliable on [this link](https://www.figma.com/community/file/110291226366661980
 
 This project is [MIT licensed](LICENSE).
 
----
+<hr />
 
 <div align="center">
-Made with <img src="https://cdn-icons-png.flaticon.com/512/7422/7422291.png" height="18px" width="20px"/> by <a href="https://www.linkedin.com/in/gahcalistro/">Me</a>.
+Made with <img src="https://cdn-icons-png.flaticon.com/512/7422/7422291.png" height="20px" width="20px"/> by <a href="https://github.com/gahcalistro">Me</a>.
 </div>
