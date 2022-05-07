@@ -4,10 +4,11 @@
   font-size: 62.5%;
 
   /* Colors */
-  --primary-hover: hsla(209, 85%, 26%, 1);
-  --primary: hsla(209, 77%, 43%, 1);
-  --primary-light: hsla(206, 100%, 91%, 1);
-  --primary-white: hsla(204, 100%, 97%, 1);
+  --hue: 209;
+  --primary-hover: hsla(var(--hue), 85%, 26%, 1);
+  --primary: hsla(var(--hue), 77%, 43%, 1);
+  --primary-light: hsla(calc(var(--hue) - 10), 100%, 91%, 1);
+  --primary-white: hsla(calc(var(--hue) - 5), 100%, 97%, 1);
   --gray-headline: hsla(210, 11%, 15%, 1);
   --gray-paragraph: hsla(210, 9%, 31%, 1);
   --white-bg: hsla(0, 0%, 98%, 1);
@@ -84,11 +85,75 @@ section .content p {
   color: var(--gray-paragraph);
 }
 
+section .content img {
+  border: 1px solid var(--primary-light);
+  border-radius: 2rem;
+}
+
+.button {
+  width: fit-content;
+
+  margin-bottom: 6rem;
+
+  padding: 1.6rem 3.2rem;
+
+  border: none;
+  border-radius: 4rem;
+
+  background: var(--primary);
+
+  color: var(--white);
+  text-transform: uppercase;
+
+  font-size: 1.4rem;
+  font-weight: 700;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.6rem;
+
+  transition: background 300ms;
+}
+
+.button:hover {
+  background: var(--primary-hover);
+}
+
 .wrapper {
   width: 37.5rem;
 
   margin-inline: auto;
   padding-inline: 2.4rem;
+}
+
+/* CUSTOM COLORS ========================================== */
+
+#services .card circle {
+  fill: var(--primary-light);
+}
+
+#navigation .logo path[fill*="#1971C2"],
+#backToTopButton circle {
+  fill: var(--primary);
+}
+
+button.open-menu path[stroke*="hsla(209, 77%, 43%, 1)"],
+#contact li path {
+  stroke: var(--primary);
+}
+
+body.menu-expanded #navigation .logo path,
+#navigation.scroll .logo path {
+  fill: var(--white);
+}
+
+#navigation.scroll button.open-menu path[stroke*="hsla(209, 77%, 43%, 1)"] {
+  stroke: var(--white);
+}
+
+#services .card path {
+  stroke: var(--primary);
 }
 
 /* NAV ========================================== */
@@ -115,14 +180,6 @@ nav .wrapper {
 
 nav.scroll {
   background: var(--primary);
-}
-
-nav.scroll .logo path {
-  fill: var(--white);
-}
-
-nav.scroll button path {
-  stroke: var(--white);
 }
 
 nav button {
@@ -214,6 +271,7 @@ body.menu-expanded .close-menu svg path {
 
   background: var(--white);
 
+  border: 1px solid var(--white);
   border-radius: 4rem;
 
   font-size: 1.8rem;
@@ -221,6 +279,15 @@ body.menu-expanded .close-menu svg path {
   line-height: 2.3rem;
   text-transform: uppercase;
   color: var(--primary);
+
+  transform: 300ms;
+}
+
+.menu .button:hover {
+  color: var(--white);
+  background: var(--primary);
+
+  /* filter: brightness(1.1); */
 }
 
 .social-links {
@@ -263,27 +330,8 @@ body.menu-expanded .close-menu svg path {
   font-size: 1.8rem;
 }
 
-#home button {
-  width: 26.3rem;
-  height: 5.2rem;
-
-  margin: 0 auto 6rem;
-
-  border: none;
-  border-radius: 4rem;
-
-  background: var(--primary);
-
-  color: var(--white);
-  text-transform: uppercase;
-
-  font-size: 1.4rem;
-  font-weight: 700;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 1.6rem;
+#home .content .button {
+  margin-inline: auto;
 }
 
 #home img {
@@ -371,7 +419,76 @@ body.menu-expanded .close-menu svg path {
   margin-bottom: 6rem;
 }
 
-#about .content img {
-  border: 1px solid var(--primary-light);
-  border-radius: 2rem;
+/* CONTACT ========================================== */
+
+#contact {
+  text-align: left;
+}
+
+#contact header h2 {
+  font-size: 3rem;
+
+  margin-bottom: 3.2rem;
+}
+
+#contact ul {
+  margin-bottom: 3.2rem;
+
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+#contact ul li {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+/* FOOTER ========================================== */
+
+footer {
+  padding-block: 6rem;
+  background: var(--primary);
+
+  text-align: left;
+}
+
+footer .logo {
+  display: inline-block;
+
+  margin-bottom: 2.4rem;
+}
+
+footer p {
+  margin-bottom: 3.2rem;
+
+  line-height: 2;
+
+  color: var(--white);
+}
+
+footer .social-links {
+  justify-content: flex-start;
+}
+
+/* BACK TO TOP BUTTON ========================================== */
+
+#backToTopButton {
+  position: fixed;
+  bottom: 1rem;
+  right: 2.5rem;
+
+  transition: 200ms;
+
+  transform: translateY(100%);
+  opacity: 0;
+  visibility: hidden;
+}
+
+#backToTopButton.show {
+  transform: translateY(0);
+
+  opacity: 1;
+  visibility: visible;
 }
