@@ -20,6 +20,8 @@ The project has been developed with these technologies:
 
 DoctorCare is an institutional responsive page in One Page format, and it was made in order to be used for small and medium business. This page features these following sections: Header, Navigation, Home, About, Services and Footer.
 
+This project was developed for educational purposes during the <strong>NLW Return</strong> event powered by [Rocketseat](https://www.rocketseat.com.br/).
+
 ## <img src="https://cdn-icons-png.flaticon.com/512/922/922699.png" height="25px" width="25px"/> Layout
 
 Avaliable on [this link](https://www.figma.com/community/file/1102912263666619803). For more details, make sure you have an account on [<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" height="16px" width="16px"/> Figma](https://figma.com).
@@ -33,3 +35,5 @@ This project is [MIT licensed](LICENSE).
 <div align="center">
 Made with <img src="https://cdn-icons-png.flaticon.com/512/7422/7422291.png" height="20px" width="20px"/> by <a href="https://github.com/gahcalistro">Me</a>.
 </div>
+
+<br />
