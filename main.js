@@ -57,7 +57,8 @@ function activateMenuAtCurrentSection(section) {
 
 ScrollReveal({
   origin: "top",
-  distance: "0",
+  distance: "30px",
+  duration: 700,
 }).reveal(`#home,
     #home img,
     #home .numbers,
