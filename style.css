@@ -45,6 +45,9 @@ body {
   overflow: overlay;
 
   background: var(--white-bg);
+
+  -webkit-tap-highlight-color: transparent;
+
 }
 
 img {
