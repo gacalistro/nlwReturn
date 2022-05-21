@@ -10,11 +10,13 @@
 
 The project has been developed with these technologies:
 
-<div style="margin-top:-15px;">
-  <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" /> &nbsp;
-  <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" /> &nbsp;
-  <img src="https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E" />
-</div>
+- HTML
+- CSS
+- Javascript
+
+Libraries:
+
+- [ScrollReveal](https://scrollrevealjs.org/)
 
 ## <img src="https://cdn-icons-png.flaticon.com/512/922/922647.png" height="30px" width="30px"/> Project
 
